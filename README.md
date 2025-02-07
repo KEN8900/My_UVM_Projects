@@ -2,7 +2,9 @@
 
 Hello, I am Hongkuan (Ken) Yu. Welcome to the public repository of my UVM Projects. 
 
-This public repository contains all the verification projects I learned and coded by myself. The main method is UVM, but I also apply normal simulation testbench and formal property verification methods. Please refer to the `README.md` file for more details for different projects respectively.<br/>
+This public repository contains all the verification projects I learned and coded by myself. The main method is UVM, but I also apply normal simulation testbench and formal property verification methods. Please refer to the `README.md` file for more details for different projects respectively.
+
+<br/>
 
 
 
