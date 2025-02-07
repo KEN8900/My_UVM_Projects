@@ -8,12 +8,13 @@ This public repository contains all the verification projects I learned and code
 
 
 
-EDA used for simulation testbench: Synopsys VCS with DVE and Synopsys Verdi
+- EDA used for simulation testbench: Synopsys VCS with DVE and Synopsys Verdi
 
-EDA expected for formal property verification: Synopsys VC Formal or Cadence JasperGold (I do not have access to them now so just expected)
+- EDA expected for formal property verification: Synopsys VC Formal or Cadence JasperGold (I do not have access to them now so just expected)
 
-EDA used for UVM: Synopsys VCS with DVE and Synopsys Verdi
+- EDA used for UVM: Synopsys VCS with DVE and Synopsys Verdi
 
-UVM Library: Mainly 1.1d
+- UVM Library: Mainly 1.1d
+
 
  
