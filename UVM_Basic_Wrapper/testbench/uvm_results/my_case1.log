@@ -1,0 +1,677 @@
+Command: vcs -fsdb -full64 -R +vc +v2k -sverilog -debug_all -l vcs.log -timescale=1ns/1ps \
+-cpp g++-4.8 -cc gcc-4.8 -LDFLAGS -Wl,--no-as-needed +acc +vpi +define+UVM_OBJECT_MUST_HAVE_CONSTRUCTOR \
++incdir+/home/ken/Synopsys/uvm-1.1d/src /home/ken/Synopsys/uvm-1.1d/src/uvm.sv /home/ken/Synopsys/uvm-1.1d/src/dpi/uvm_dpi.cc \
+-CFLAGS -DVCS +UVM_TESTNAME=my_case1 -f filelist.f
+*** Using c compiler gcc-4.8 instead of cc ...
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-fsdb' will be deprecated in a future release.  Please use 
+  '-debug_acc+dmptf -debug_region+cell+encrypt' instead.
+
+                         Chronologic VCS (TM)
+       Version O-2018.09-SP2_Full64 -- Fri Feb  7 04:06:37 2025
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[DEPRECATED_OPTION] Deprecated option used
+  The specified option '+acc' is deprecated.
+  Please use '-debug_access+r+w+nomemcbk -debug_region+cell' instead.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all -debug_region+cell+encrypt' instead.
+
+Parsing design file '/home/ken/Synopsys/uvm-1.1d/src/uvm.sv'
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/macros/uvm_version_defines.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/macros/uvm_message_defines.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/macros/uvm_phase_defines.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/macros/uvm_object_defines.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/macros/uvm_printer_defines.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/macros/uvm_tlm_defines.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/macros/uvm_tlm_defines.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/macros/uvm_sequence_defines.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/macros/uvm_callback_defines.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/macros/uvm_reg_defines.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_macros.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/macros/uvm_deprecated_defines.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_macros.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/dpi/uvm_dpi.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/dpi/uvm_hdl.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/dpi/uvm_dpi.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/dpi/uvm_dpi.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/dpi/uvm_regex.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/dpi/uvm_dpi.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_version.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_object_globals.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_misc.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_object.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_pool.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_queue.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_factory.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_registry.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_spell_chkr.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_resource.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/deprecated/uvm_resource_converter.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_resource_specializations.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_resource_db.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_config_db.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_printer.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_comparer.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_packer.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_recorder.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_event_callback.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_event.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_barrier.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_callback.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/uvm_macros.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_callback.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_report_catcher.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_report_server.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_report_handler.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_report_object.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_transaction.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_phase.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_domain.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_bottomup_phase.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_topdown_phase.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_task_phase.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_common_phases.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_runtime_phases.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_component.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_root.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_component.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_objection.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_heartbeat.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_globals.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_cmdline_processor.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_base.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/base/uvm_port_base.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_imps.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_ports.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_exports.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_analysis_port.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_sqr_connections.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm1/uvm_tlm.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_pair.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_policies.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_in_order_comparator.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_random_stimulus.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_subscriber.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_monitor.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_driver.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_push_driver.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_scoreboard.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_agent.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_env.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_test.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/comps/uvm_comps.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_sequence_item.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_sequencer_base.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_sequencer_param_base.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_sequencer.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_push_sequencer.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_sequence_base.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_sequence.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_sequence_library.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_seq.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_sequence_builtin.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/seq/uvm_seq.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2_time.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/tlm2/uvm_tlm2.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_pkg.sv'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_item.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_adapter.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_predictor.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_sequence.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_cbs.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_backdoor.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_field.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_vreg_field.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_indirect.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_fifo.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_file.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_mem_mam.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_vreg.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_mem.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_map.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_block.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/reg/uvm_reg_model.svh'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm_pkg.sv'.
+Back to file '/home/ken/Synopsys/uvm-1.1d/src/uvm.sv'.
+Parsing design file '../../dut/dut.sv'
+Parsing design file '../uvm/top_tb.sv'
+Parsing included file '/home/ken/Synopsys/uvm-1.1d/src/uvm_macros.svh'.
+Back to file '../uvm/top_tb.sv'.
+Parsing included file '../uvm/my_if.sv'.
+Back to file '../uvm/top_tb.sv'.
+Parsing included file '../uvm/my_transaction.sv'.
+Back to file '../uvm/top_tb.sv'.
+Parsing included file '../uvm/my_sequencer.sv'.
+Back to file '../uvm/top_tb.sv'.
+Parsing included file '../uvm/my_driver.sv'.
+Back to file '../uvm/top_tb.sv'.
+Parsing included file '../uvm/my_monitor.sv'.
+Back to file '../uvm/top_tb.sv'.
+Parsing included file '../uvm/my_agent.sv'.
+Back to file '../uvm/top_tb.sv'.
+Parsing included file '../uvm/my_model.sv'.
+Back to file '../uvm/top_tb.sv'.
+Parsing included file '../uvm/my_scoreboard.sv'.
+Back to file '../uvm/top_tb.sv'.
+Parsing included file '../uvm/my_env.sv'.
+Back to file '../uvm/top_tb.sv'.
+Parsing included file '../uvm/base_test.sv'.
+Back to file '../uvm/top_tb.sv'.
+Parsing included file '../uvm/my_case0.sv'.
+Back to file '../uvm/top_tb.sv'.
+Parsing included file '../uvm/my_case1.sv'.
+Back to file '../uvm/top_tb.sv'.
+Parsing design file '../uvm/my_if.sv'
+Parsing design file '../uvm/my_driver.sv'
+Parsing design file '../uvm/my_monitor.sv'
+Parsing design file '../uvm/my_sequencer.sv'
+Parsing design file '../uvm/my_transaction.sv'
+Parsing design file '../uvm/my_agent.sv'
+Parsing design file '../uvm/my_model.sv'
+Parsing design file '../uvm/my_scoreboard.sv'
+Parsing design file '../uvm/my_env.sv'
+Parsing design file '../uvm/base_test.sv'
+Parsing design file '../uvm/my_case0.sv'
+Parsing design file '../uvm/my_case1.sv'
+Top Level Modules:
+       top_tb
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+5 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling package uvm_pkg
+recompiling module dut
+recompiling module my_if
+recompiling module top_tb
+All of 5 modules done
+make[1]: Entering directory '/home/ken/Github_Codes/My_UVM_Projects/UVM_Basic_Wrapper/testbench/uvm_script/csrc' \
+
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+g++-4.8 -w  -pipe -fPIC -DVCS -O -I/home/ken/Synopsys/vcs/O-2018.09-SP2/include  \
+-c /home/ken/Synopsys/uvm-1.1d/src/dpi/uvm_dpi.cc
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++-4.8  -o ../simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
+-Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -Wl,--no-as-needed -rdynamic  -Wl,-rpath=/home/ken/Synopsys/vcs/O-2018.09-SP2/linux64/lib \
+-L/home/ken/Synopsys/vcs/O-2018.09-SP2/linux64/lib  uvm_dpi.o   objs/amcQw_d.o  _41624_archive_1.so \
+SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
+-lzerosoft_rt_stubs -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /home/ken/Synopsys/vcs/O-2018.09-SP2/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli -Wl,-no-whole-archive      ./../simv.daidir/vc_hdrs.o _vcs_pli_stub_.o \
+/home/ken/Synopsys/vcs/O-2018.09-SP2/linux64/lib/vcs_save_restore_new.o /home/ken/Synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -lc -lm -lpthread -ldl 
+/usr/bin/ld: warning: rmar_nd.o: missing .note.GNU-stack section implies executable \
+stack
+/usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version \
+of the linker
+../simv up to date
+make[1]: Leaving directory '/home/ken/Github_Codes/My_UVM_Projects/UVM_Basic_Wrapper/testbench/uvm_script/csrc' \
+
+Command: /home/ken/Github_Codes/My_UVM_Projects/UVM_Basic_Wrapper/testbench/uvm_script/./simv +vc +v2k -a vcs.log +acc +define+UVM_OBJECT_MUST_HAVE_CONSTRUCTOR +UVM_TESTNAME=my_case1
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP2_Full64; Runtime version O-2018.09-SP2_Full64;  Feb  7 04:06 2025
+----------------------------------------------------------------
+UVM-1.1d
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test my_case1...
+UVM_INFO ../uvm/my_driver.sv(39) @ 1100000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+UVM_INFO ../uvm/my_monitor.sv(46) @ 2100000: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_monitor.sv(46) @ 2300000: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_driver.sv(49) @ 17500000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO ../uvm/my_driver.sv(39) @ 17500000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+UVM_INFO ../uvm/my_monitor.sv(58) @ 17700000: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_model.sv(34) @ 17700000: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+-------------------------------------------------------
+Name               Type            Size  Value         
+-------------------------------------------------------
+uvm_sequence_item  my_transaction  -     @945          
+  dmac             integral        48    'h203ddd553e22
+  smac             integral        48    'hd8bfe3145f9 
+  ether_type       integral        16    'h572f        
+  pload            da(integral)    60    -             
+    [0]            integral        8     'ha1          
+    [1]            integral        8     'h1d          
+    [2]            integral        8     'h1a          
+    [3]            integral        8     'hee          
+    [4]            integral        8     'h95          
+    ...            ...             ...   ...           
+    [55]           integral        8     'h99          
+    [56]           integral        8     'hfb          
+    [57]           integral        8     'h20          
+    [58]           integral        8     'h8a          
+    [59]           integral        8     'h16          
+  crc              integral        32    'h0           
+-------------------------------------------------------
+UVM_INFO ../uvm/my_monitor.sv(58) @ 17900000: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_scoreboard.sv(40) @ 17900000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../uvm/my_monitor.sv(46) @ 18500000: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_monitor.sv(46) @ 18700000: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_driver.sv(49) @ 33900000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO ../uvm/my_driver.sv(39) @ 33900000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+UVM_INFO ../uvm/my_monitor.sv(58) @ 34100000: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_model.sv(34) @ 34100000: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+-------------------------------------------------------
+Name               Type            Size  Value         
+-------------------------------------------------------
+uvm_sequence_item  my_transaction  -     @961          
+  dmac             integral        48    'hf044131a54ac
+  smac             integral        48    'h3ec5b7be5714
+  ether_type       integral        16    'h904d        
+  pload            da(integral)    60    -             
+    [0]            integral        8     'hfb          
+    [1]            integral        8     'hbe          
+    [2]            integral        8     'h89          
+    [3]            integral        8     'h9c          
+    [4]            integral        8     'h18          
+    ...            ...             ...   ...           
+    [55]           integral        8     'hbf          
+    [56]           integral        8     'h5a          
+    [57]           integral        8     'h38          
+    [58]           integral        8     'hdb          
+    [59]           integral        8     'h28          
+  crc              integral        32    'h0           
+-------------------------------------------------------
+UVM_INFO ../uvm/my_monitor.sv(58) @ 34300000: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_scoreboard.sv(40) @ 34300000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../uvm/my_monitor.sv(46) @ 34900000: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_monitor.sv(46) @ 35100000: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_driver.sv(49) @ 50300000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO ../uvm/my_driver.sv(39) @ 50300000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+UVM_INFO ../uvm/my_monitor.sv(58) @ 50500000: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_model.sv(34) @ 50500000: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+-------------------------------------------------------
+Name               Type            Size  Value         
+-------------------------------------------------------
+uvm_sequence_item  my_transaction  -     @977          
+  dmac             integral        48    'h4ac25e9785c 
+  smac             integral        48    'hafd9213b80e6
+  ether_type       integral        16    'h227b        
+  pload            da(integral)    60    -             
+    [0]            integral        8     'hbe          
+    [1]            integral        8     'h29          
+    [2]            integral        8     'h5           
+    [3]            integral        8     'h71          
+    [4]            integral        8     'h2c          
+    ...            ...             ...   ...           
+    [55]           integral        8     'h9f          
+    [56]           integral        8     'h98          
+    [57]           integral        8     'h4d          
+    [58]           integral        8     'h14          
+    [59]           integral        8     'h5d          
+  crc              integral        32    'h0           
+-------------------------------------------------------
+UVM_INFO ../uvm/my_monitor.sv(58) @ 50700000: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_scoreboard.sv(40) @ 50700000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../uvm/my_monitor.sv(46) @ 51300000: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_monitor.sv(46) @ 51500000: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_driver.sv(49) @ 66700000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO ../uvm/my_driver.sv(39) @ 66700000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+UVM_INFO ../uvm/my_monitor.sv(58) @ 66900000: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_model.sv(34) @ 66900000: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+-------------------------------------------------------
+Name               Type            Size  Value         
+-------------------------------------------------------
+uvm_sequence_item  my_transaction  -     @993          
+  dmac             integral        48    'he31e0a44b543
+  smac             integral        48    'h74438ff95668
+  ether_type       integral        16    'h51e8        
+  pload            da(integral)    60    -             
+    [0]            integral        8     'h41          
+    [1]            integral        8     'h20          
+    [2]            integral        8     'he0          
+    [3]            integral        8     'he8          
+    [4]            integral        8     'hd2          
+    ...            ...             ...   ...           
+    [55]           integral        8     'h88          
+    [56]           integral        8     'h2           
+    [57]           integral        8     'hc2          
+    [58]           integral        8     'h63          
+    [59]           integral        8     'h17          
+  crc              integral        32    'h0           
+-------------------------------------------------------
+UVM_INFO ../uvm/my_monitor.sv(58) @ 67100000: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_scoreboard.sv(40) @ 67100000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../uvm/my_monitor.sv(46) @ 67700000: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_monitor.sv(46) @ 67900000: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_driver.sv(49) @ 83100000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO ../uvm/my_driver.sv(39) @ 83100000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+UVM_INFO ../uvm/my_monitor.sv(58) @ 83300000: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_model.sv(34) @ 83300000: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+-------------------------------------------------------
+Name               Type            Size  Value         
+-------------------------------------------------------
+uvm_sequence_item  my_transaction  -     @1009         
+  dmac             integral        48    'hfb4219e53fdf
+  smac             integral        48    'h7f96e0720deb
+  ether_type       integral        16    'hacc3        
+  pload            da(integral)    60    -             
+    [0]            integral        8     'hf2          
+    [1]            integral        8     'h5f          
+    [2]            integral        8     'hde          
+    [3]            integral        8     'h6a          
+    [4]            integral        8     'he1          
+    ...            ...             ...   ...           
+    [55]           integral        8     'h98          
+    [56]           integral        8     'h58          
+    [57]           integral        8     'he5          
+    [58]           integral        8     'h8d          
+    [59]           integral        8     'h22          
+  crc              integral        32    'h0           
+-------------------------------------------------------
+UVM_INFO ../uvm/my_monitor.sv(58) @ 83500000: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_scoreboard.sv(40) @ 83500000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../uvm/my_monitor.sv(46) @ 84100000: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_monitor.sv(46) @ 84300000: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_driver.sv(49) @ 99500000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO ../uvm/my_driver.sv(39) @ 99500000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+UVM_INFO ../uvm/my_monitor.sv(58) @ 99700000: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_model.sv(34) @ 99700000: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+-------------------------------------------------------
+Name               Type            Size  Value         
+-------------------------------------------------------
+uvm_sequence_item  my_transaction  -     @1025         
+  dmac             integral        48    'ha582dd8ea047
+  smac             integral        48    'hc2ca9581e181
+  ether_type       integral        16    'h47d3        
+  pload            da(integral)    60    -             
+    [0]            integral        8     'hf4          
+    [1]            integral        8     'hea          
+    [2]            integral        8     'h89          
+    [3]            integral        8     'h6b          
+    [4]            integral        8     'h25          
+    ...            ...             ...   ...           
+    [55]           integral        8     'h1a          
+    [56]           integral        8     'h5c          
+    [57]           integral        8     'hd7          
+    [58]           integral        8     'ha3          
+    [59]           integral        8     'h39          
+  crc              integral        32    'h0           
+-------------------------------------------------------
+UVM_INFO ../uvm/my_monitor.sv(58) @ 99900000: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_scoreboard.sv(40) @ 99900000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../uvm/my_monitor.sv(46) @ 100500000: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_monitor.sv(46) @ 100700000: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_driver.sv(49) @ 115900000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO ../uvm/my_driver.sv(39) @ 115900000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+UVM_INFO ../uvm/my_monitor.sv(58) @ 116100000: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_model.sv(34) @ 116100000: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+-------------------------------------------------------
+Name               Type            Size  Value         
+-------------------------------------------------------
+uvm_sequence_item  my_transaction  -     @1041         
+  dmac             integral        48    'hd3e5b8ff6b9f
+  smac             integral        48    'h52ff648b1078
+  ether_type       integral        16    'hecb6        
+  pload            da(integral)    60    -             
+    [0]            integral        8     'h7f          
+    [1]            integral        8     'hd6          
+    [2]            integral        8     'hb7          
+    [3]            integral        8     'h7f          
+    [4]            integral        8     'h73          
+    ...            ...             ...   ...           
+    [55]           integral        8     'hcf          
+    [56]           integral        8     'hd5          
+    [57]           integral        8     'hb2          
+    [58]           integral        8     'h5e          
+    [59]           integral        8     'h55          
+  crc              integral        32    'h0           
+-------------------------------------------------------
+UVM_INFO ../uvm/my_monitor.sv(58) @ 116300000: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_scoreboard.sv(40) @ 116300000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../uvm/my_monitor.sv(46) @ 116900000: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_monitor.sv(46) @ 117100000: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_driver.sv(49) @ 132300000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO ../uvm/my_driver.sv(39) @ 132300000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+UVM_INFO ../uvm/my_monitor.sv(58) @ 132500000: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_model.sv(34) @ 132500000: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+-------------------------------------------------------
+Name               Type            Size  Value         
+-------------------------------------------------------
+uvm_sequence_item  my_transaction  -     @1057         
+  dmac             integral        48    'h552e400d5e03
+  smac             integral        48    'h619745679153
+  ether_type       integral        16    'h516f        
+  pload            da(integral)    60    -             
+    [0]            integral        8     'hec          
+    [1]            integral        8     'h2f          
+    [2]            integral        8     'h66          
+    [3]            integral        8     'h4c          
+    [4]            integral        8     'h5           
+    ...            ...             ...   ...           
+    [55]           integral        8     'h9a          
+    [56]           integral        8     'h6e          
+    [57]           integral        8     'h33          
+    [58]           integral        8     'hee          
+    [59]           integral        8     'h9e          
+  crc              integral        32    'h0           
+-------------------------------------------------------
+UVM_INFO ../uvm/my_monitor.sv(58) @ 132700000: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_scoreboard.sv(40) @ 132700000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../uvm/my_monitor.sv(46) @ 133300000: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_monitor.sv(46) @ 133500000: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_driver.sv(49) @ 148700000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO ../uvm/my_driver.sv(39) @ 148700000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+UVM_INFO ../uvm/my_monitor.sv(58) @ 148900000: uvm_test_top.env.i_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_model.sv(34) @ 148900000: uvm_test_top.env.mdl [my_model] get one transaction, copy and print it:
+-------------------------------------------------------
+Name               Type            Size  Value         
+-------------------------------------------------------
+uvm_sequence_item  my_transaction  -     @1073         
+  dmac             integral        48    'hd4ca20931a3f
+  smac             integral        48    'h774230a9f279
+  ether_type       integral        16    'hee57        
+  pload            da(integral)    60    -             
+    [0]            integral        8     'h89          
+    [1]            integral        8     'hdd          
+    [2]            integral        8     'h96          
+    [3]            integral        8     'h65          
+    [4]            integral        8     'h75          
+    ...            ...             ...   ...           
+    [55]           integral        8     'h63          
+    [56]           integral        8     'h44          
+    [57]           integral        8     'hda          
+    [58]           integral        8     'hd8          
+    [59]           integral        8     'h68          
+  crc              integral        32    'h0           
+-------------------------------------------------------
+UVM_INFO ../uvm/my_monitor.sv(58) @ 149100000: uvm_test_top.env.o_agt.mon [my_monitor] end collect one pkt
+UVM_INFO ../uvm/my_scoreboard.sv(40) @ 149100000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO ../uvm/my_monitor.sv(46) @ 149700000: uvm_test_top.env.i_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_monitor.sv(46) @ 149900000: uvm_test_top.env.o_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO ../uvm/my_driver.sv(49) @ 165100000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+TEST CASE PASSED
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   77
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[my_driver]    20
+[my_model]     9
+[my_monitor]    38
+[my_scoreboard]     9
+$finish called from file "/home/ken/Synopsys/uvm-1.1d/src/base/uvm_root.svh", line 430.
+$finish at simulation time            165200000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 165200000 ps
+CPU Time:      0.310 seconds;       Data structure size:   0.4Mb
+Fri Feb  7 04:06:43 2025
+CPU time: 3.967 seconds to compile + .386 seconds to elab + .764 seconds to link + .363 seconds in simulation
