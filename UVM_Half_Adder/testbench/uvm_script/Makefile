@@ -13,7 +13,7 @@ vcs   :
 			+incdir+$(UVM_HOME)/src \
 			$(UVM_HOME)/src/uvm.sv \
 			$(UVM_HOME)/src/dpi/uvm_dpi.cc -CFLAGS -DVCS \
-			+UVM_TESTNAME=random_data_burst_case \
+			+UVM_TESTNAME=random_data_1delay_case \
 			-f filelist.f
 
 #-------------------------------------------------------------------------------------------------------
