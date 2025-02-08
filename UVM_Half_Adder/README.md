@@ -1,6 +1,6 @@
 # Half Adder DUT
 
-The folder `UVM_Half_Adder` contains a Half Adder as DUT. More details can be find in `Half_Adder_Module_Test_Plan_and_Results.pdf`.
+The folder `UVM_Half_Adder` contains a Half Adder as DUT. More details can be found in `Half_Adder_Module_Test_Plan_and_Results.pdf`.
 
 
 
