@@ -10,7 +10,7 @@ This public repository contains all the verification projects I learned and code
 
 - EDA used for simulation testbench: Synopsys VCS with DVE and Synopsys Verdi
 
-- EDA expected for FPV: Synopsys VC Formal or Cadence JasperGold (I do not have access to them now so just expected)
+- EDA used for FPV: Synopsys VC Formal or Cadence JasperGold
 
 - EDA used for UVM: Synopsys VCS with DVE and Synopsys Verdi
 

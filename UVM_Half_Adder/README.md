@@ -20,9 +20,9 @@ The files are organized into distinct folders.
 
   - `testbench/sva`: Contains SystemVerilog Properties for FPV.
 
-  - `testbench/sva_results`: Contains expected FPV results (I do not have FPV EDA access now so just expected).
+  - `testbench/sva_results`: Contains FPV results.
 
-  - `testbench/sva_script`: Contains expected scripts to control EDA (I do not have FPV EDA access now so just expected).
+  - `testbench/sva_script`: Contains necessary scripts to control EDA.
 
   - `testbench/uvm`: Contains different UVM parts.
 

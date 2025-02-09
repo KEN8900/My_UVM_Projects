@@ -23,5 +23,5 @@ clean  :
 	 rm  -rf  *~  core  csrc  simv*  vc_hdrs.h  ucli.key  urg* *.log  novas.* *.fsdb* verdiLog  64* DVEfiles *.vpd vfastLog *.vcd ./jgproject
 #-------------------------------------------------------------------------------------------------------
 jg     :
-	 jg dut_sva.tcl
+	 jg dut_sva_jg.tcl
 
