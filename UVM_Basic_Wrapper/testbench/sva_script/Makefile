@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------------------------------
-comp  : clean vcs gui
+comp  : clean jg
 #-------------------------------------------------------------------------------------------------------
 vcs   :
 	vcs  \
@@ -20,4 +20,8 @@ sim    :
 	./simv -l simv.log
 #-------------------------------------------------------------------------------------------------------
 clean  :
-	 rm  -rf  *~  core  csrc  simv*  vc_hdrs.h  ucli.key  urg* *.log  novas.* *.fsdb* verdiLog  64* DVEfiles *.vpd vfastLog *.vcd
+	 rm  -rf  *~  core  csrc  simv*  vc_hdrs.h  ucli.key  urg* *.log  novas.* *.fsdb* verdiLog  64* DVEfiles *.vpd vfastLog *.vcd ./jgproject
+#-------------------------------------------------------------------------------------------------------
+jg     :
+	 jg dut_sva.tcl
+

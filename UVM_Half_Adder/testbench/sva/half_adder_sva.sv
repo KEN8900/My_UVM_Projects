@@ -1,7 +1,7 @@
 module half_adder_sva(input logic clk,
                       input logic rst_n,
                       input logic [8:0] data_in0,
-                      input logic [8:0] data_in1
+                      input logic [8:0] data_in1,
                       input logic in_valid,
                       input logic [9:0] data_out,
                       input logic out_valid);
@@ -22,6 +22,8 @@ property correct_data_out;
     in_valid |=> out_valid && (data_out == $past(data_in0, 1) + $past(data_in1, 1));
 endproperty
 
+// Reset_Func: assert property (active_low_reset_functionality);
+// Reset_Hold: assert property (active_low_reset_hold);
 Correct_data_out: assert property (correct_data_out);
 
 endmodule

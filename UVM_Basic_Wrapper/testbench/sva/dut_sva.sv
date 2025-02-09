@@ -7,13 +7,14 @@ module dut_sva(input logic clk,
 
 // May need to check active-low reset
 // property active_low_reset_functionality;
-//   @(posedge clk) 
-//   $fell(rst_n) |=> (txd == 8'h0 && tx_en == 0); // After reset falls, outputs are 0 next cycle
+//    @(posedge clk) 
+//    $fell(rst_n) |=> (txd == 8'h0 && tx_en == 0); // After reset falls, outputs are 0 next cycle
 // endproperty
 
+ 
 // property active_low_reset_hold;
-//   @(posedge clk) 
-//   !rst_n |=> (txd == 8'h0 && tx_en == 0); // While reset is low, outputs stay 0
+//    @(posedge clk) 
+//    !rst_n |=> (txd == 8'h0 && tx_en == 0); // While reset is low, outputs stay 0
 // endproperty
 
 property txd_gets_rxd;
@@ -21,6 +22,8 @@ property txd_gets_rxd;
     rx_dv |=> tx_en && txd == $past(rxd, 1);
 endproperty
 
+// Reset_Func: assert property (active_low_reset_functionality);
+// Reset_Hold: assert property (active_low_reset_hold);
 txd_Gets_rxd: assert property (txd_gets_rxd);
 
 endmodule
