@@ -1,0 +1,54 @@
+restore_session -level default
+
+
+
+
+
+
+
+MasterSourceFile ./half_adder_sva_vcf.tcl
+set_fml_appmode FPV
+set design half_adder
+set_app_var fml_mode_on true
+read_file -top $design -format sverilog -sva           -vcs {-full64 -sverilog -f filelist.f}
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Info: Invoking New SVA Compiler Instrument...
+Info: SVAC-NC Start
+Info: SVAC-NC Finished
+Info: Invoking Simon...
+Info: Simon VCS Start
+=======================================================
+VCS CPU Time(s)     :0.10
+SIMON CPU Time(s)   :0.05
+SIMON Total Time(s) :0.02
+Peak Memory(MB)     :330
+=======================================================
+Info: Simon VCS Finished
+Info: Simon call complete 
+Info: Exiting after Simon Analysis 
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+[Info] DB_COPT045: Vcs analyzer task has finished.
+[Info] PROP_I_COLLECT: Collecting Source Properties from the view:half_adder.
+#read_waiver_file -elfiles aep.el
+# Creating clock and reset signals
+create_clock clk -period 100 
+create_reset rst_n -sense low
+# Runing a reset simulation
+sim_run -stable 
+[Info] SIM_I_CREATE: Create Simulation Model.
+sim_save_reset
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+action aaMonetBanffSavePropDBToStream -summary 1 -trigger
+report_constant -xml > /home/ken/GitHub_Codes/My_IC_Practice/UVM_Projects/UVM_Half_Adder/testbench/sva_script/vcst_rtdb/.internal/verdi/constant.xml ; verdi_cmd verdiVcstConstantReport -xmlFile /home/ken/GitHub_Codes/My_IC_Practice/UVM_Projects/UVM_Half_Adder/testbench/sva_script/vcst_rtdb/.internal/verdi/constant.xml
+action aaVerdiWaitAnnotation -trigger
+action aaMonetSetReuseWave -data {}
+check_fv
+[Info] FORMAL_I_CREATE: Create Formal Model:half_adder.
+[Info] FORMAL_I_RUN: Starting formal verification for check_fv
+	  Id: 0  Goals: 2  Constraints: 0  Block Mode: false
+[Info] APP_LIC_CHKOUT: Checkout 1 app license(s).
