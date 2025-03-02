@@ -41,7 +41,7 @@ module testbench();
         rxd <= 8'd130;
         rx_dv <= 1'b1;
 
-        #20;
+        #50;
         $finish;
 	end
 	

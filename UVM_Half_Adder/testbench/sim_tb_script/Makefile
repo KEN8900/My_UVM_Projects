@@ -3,7 +3,7 @@ comp  : clean vcs gui
 #-------------------------------------------------------------------------------------------------------
 vcs   :
 	vcs  \
-	      -cpp g++-4.8 -cc gcc-4.8 -LDFLAGS -Wl,--no-as-needed \
+	      -cpp g++ -cc gcc -LDFLAGS -Wl,--no-as-needed \
               -l vcs.log \
               -timescale=1ns/1ns \
               -fsdb  -full64  -R  +vc  +v2k  -sverilog  -debug_all  \

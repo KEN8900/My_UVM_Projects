@@ -36,4 +36,3 @@ The files are organized into distinct folders.
   
   - `testbench/uvm_script`: Contains necessary scripts to control EDA.
   
-    

@@ -15,7 +15,6 @@ interface interface_in(input clk, input rst_n);
         default input #1ns output #1ns;
         input data0, data1, valid;
     endclocking
-
 endinterface
 
 interface interface_out(input clk, input rst_n);

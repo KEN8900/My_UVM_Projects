@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------------------------------
-comp  : clean jg
+comp  : clean vcf
 #-------------------------------------------------------------------------------------------------------
 vcs   :
 	vcs  \
@@ -20,11 +20,15 @@ sim    :
 	./simv -l simv.log
 #-------------------------------------------------------------------------------------------------------
 clean  :
-	 rm  -rf  *~  core  csrc  simv*  vc_hdrs.h  ucli.key  urg* *.log  novas.* *.fsdb* verdiLog \
-			  64* DVEfiles *.vpd vfastLog *.vcd jgproject vcst_rtdb 
+	rm  -rf  *~  core  csrc  simv*  vc_hdrs.h  ucli.key  urg* *.log  novas.* *.fsdb* verdiLog \
+			 64* DVEfiles *.vpd vfastLog *.vcd jgproject vcst_rtdb *.bak
 #-------------------------------------------------------------------------------------------------------
 jg     :
-	 jg half_adder_sva_jg.tcl
+	jg half_adder_sva_jg.tcl
 #-------------------------------------------------------------------------------------------------------
 vcf    :
-	 vcf -verdi -f ./half_adder_sva_vcf.tcl
+	vcf -verdi -f ./half_adder_sva_vcf.tcl
+#-------------------------------------------------------------------------------------------------------
+fix	:
+	sh fix.sh
+
