@@ -23,8 +23,10 @@ endfunction
 
 function void monitor_out::build_phase(uvm_phase phase);
     super.build_phase(phase);
-    if(!uvm_config_db#(virtual interface_out)::get(this, "", "vif", vif))
+    if(!uvm_config_db#(virtual interface_out)::get(this, "", "vif", vif)) begin
         `uvm_fatal("monitor_out", "virtual interface_out must be set for vif!!!")
+    end
+    
     ap = new("ap", this);
 endfunction
  

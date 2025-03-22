@@ -11,8 +11,9 @@ class my_driver extends uvm_driver#(my_transaction);
 
    virtual function void build_phase(uvm_phase phase);
       super.build_phase(phase);
-      if(!uvm_config_db#(virtual my_if)::get(this, "", "vif", vif))
+      if(!uvm_config_db#(virtual my_if)::get(this, "", "vif", vif)) begin
          `uvm_fatal("my_driver", "virtual interface must be set for vif!!!")
+      end
    endfunction
 
    extern task main_phase(uvm_phase phase);
@@ -22,8 +23,9 @@ endclass
 task my_driver::main_phase(uvm_phase phase);
    vif.data <= 8'b0;
    vif.valid <= 1'b0;
-   while(!vif.rst_n)
+   while(!vif.rst_n) begin
       @(posedge vif.clk);
+   end
    while(1) begin
       seq_item_port.get_next_item(req);
       drive_one_pkt(req);

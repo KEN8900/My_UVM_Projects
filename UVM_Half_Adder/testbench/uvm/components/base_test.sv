@@ -55,7 +55,8 @@ function void base_test::report_phase(uvm_phase phase);
         $display("It has %0d error(s).", err_num);
         $display("!!!!!!!!!!!!!!!!!!");
         $fwrite( fid, $sformatf("TestCase Failed: %s\n\n", testname) );
-    end else begin
+    end 
+    else begin
         $display("==================================================");
         $display("TestCase Passed: %s", testname);
         $display("==================================================");

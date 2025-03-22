@@ -14,8 +14,9 @@ class random_data_random_delay_sequence extends uvm_sequence;
     virtual task body();
         base_sequence dut_seq;
 
-        if(starting_phase != null)
+        if(starting_phase != null) begin
             starting_phase.raise_objection(this);
+        end
         
         repeat(20) begin
             `uvm_do_on_with(dut_seq, p_sequencer.p_dut_sqr, {ntrans == 1; ndelay == -1;})
@@ -23,8 +24,9 @@ class random_data_random_delay_sequence extends uvm_sequence;
 
         #5000;
         
-        if(starting_phase != null)
+        if(starting_phase != null) begin
             starting_phase.drop_objection(this);
+        end
     endtask    
 endclass
 

@@ -21,8 +21,9 @@ endfunction
 
 function void driver_in::build_phase(uvm_phase phase);
     super.build_phase(phase);
-    if(!uvm_config_db#(virtual interface_in)::get(this, "", "vif", vif))
+    if(!uvm_config_db#(virtual interface_in)::get(this, "", "vif", vif)) begin
         `uvm_fatal("driver_in", "virtual interface_in must be set for vif!!!")
+    end
 endfunction
 
 task driver_in::main_phase(uvm_phase phase);

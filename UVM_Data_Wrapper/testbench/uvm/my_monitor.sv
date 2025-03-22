@@ -13,8 +13,10 @@ class my_monitor extends uvm_monitor;
 
    virtual function void build_phase(uvm_phase phase);
       super.build_phase(phase);
-      if(!uvm_config_db#(virtual my_if)::get(this, "", "vif", vif))
+      if(!uvm_config_db#(virtual my_if)::get(this, "", "vif", vif)) begin
          `uvm_fatal("my_monitor", "virtual interface must be set for vif!!!")
+      end
+      
       ap = new("ap", this);
    endfunction
 

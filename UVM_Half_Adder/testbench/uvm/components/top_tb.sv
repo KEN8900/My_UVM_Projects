@@ -71,7 +71,8 @@ initial begin
     string testname;
     if($value$plusargs("TESTNAME=%s", testname)) begin
         $fsdbDumpfile({testname, "_sim_dir/", testname, ".fsdb"});
-    end else begin
+    end 
+    else begin
         $fsdbDumpfile("top_tb.fsdb");
     end
     $fsdbDumpvars(0, top_tb);

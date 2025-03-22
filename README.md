@@ -13,4 +13,3 @@ This public repository contains all the verification projects I learned and code
 - EDA used for UVM: Synopsys VCS with DVE and Synopsys Verdi
 
 - UVM Library: Mainly 1.1d
-

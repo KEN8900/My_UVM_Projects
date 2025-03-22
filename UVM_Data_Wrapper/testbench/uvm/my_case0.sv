@@ -8,14 +8,19 @@ class case0_sequence extends uvm_sequence #(my_transaction);
    endfunction 
    
    virtual task body();
-      if(starting_phase != null) 
+      if(starting_phase != null) begin
          starting_phase.raise_objection(this);
+      end
+
       repeat (10) begin
          `uvm_do(m_trans)
       end
+
       #100;
-      if(starting_phase != null) 
+
+      if(starting_phase != null) begin
          starting_phase.drop_objection(this);
+      end
    endtask
 
    `uvm_object_utils(case0_sequence)
