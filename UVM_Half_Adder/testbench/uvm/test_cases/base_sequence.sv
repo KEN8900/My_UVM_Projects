@@ -17,7 +17,7 @@ class base_sequence extends uvm_sequence #(transaction_in);
     extern function new(string name);
     extern virtual task body();
 
-    `uvm_object_utils(base_sequence)
+    `uvm_object_utils(base_sequence);
 endclass
 
 function base_sequence::new(string name = "base_sequence");
@@ -25,7 +25,7 @@ function base_sequence::new(string name = "base_sequence");
 endfunction
 
 task base_sequence::body();
-    `uvm_info("base_sequence",  $sformatf("send %0d transaction to sequencer", ntrans), UVM_LOW)
+    `uvm_info("base_sequence",  $sformatf("send %0d transaction to sequencer", ntrans), UVM_LOW);
     // req is implicit declared, like:
     // transaction_in req
     repeat(ntrans) begin

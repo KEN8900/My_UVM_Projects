@@ -7,7 +7,7 @@ module half_adder(input clk,
                   output reg out_valid
                   );
 
-always @(posedge clk) begin
+always @(posedge clk or negedge rst_n) begin
     if(!rst_n) begin
         data_out    <= 9'h0;
         out_valid   <= 1'b0;

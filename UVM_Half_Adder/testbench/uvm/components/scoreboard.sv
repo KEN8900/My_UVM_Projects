@@ -11,7 +11,7 @@ class scoreboard extends uvm_scoreboard;
     extern virtual function void build_phase(uvm_phase phase);
     extern virtual task main_phase(uvm_phase phase);
 
-    `uvm_component_utils(scoreboard)
+    `uvm_component_utils(scoreboard);
 endclass 
  
 function scoreboard::new(string name = "scoreboard", uvm_component parent);
@@ -39,7 +39,7 @@ task scoreboard::main_phase(uvm_phase phase);
             if(expect_queue.size() > 0) begin
                 tmp_tran = expect_queue.pop_front();
                 result = get_actual.compare(tmp_tran);
-                if(result) begin 
+                if (result) begin 
                     `uvm_info("scoreboard", "Compare SUCCESSFULLY", UVM_LOW);
                 end
                 else begin

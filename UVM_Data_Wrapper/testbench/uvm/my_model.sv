@@ -10,7 +10,7 @@ class my_model extends uvm_component;
    extern function void build_phase(uvm_phase phase);
    extern virtual  task main_phase(uvm_phase phase);
 
-   `uvm_component_utils(my_model)
+   `uvm_component_utils(my_model);
 endclass 
 
 function my_model::new(string name, uvm_component parent);
@@ -31,7 +31,7 @@ task my_model::main_phase(uvm_phase phase);
       port.get(tr);
       new_tr = new("new_tr");
       new_tr.copy(tr);
-      `uvm_info("my_model", "get one transaction, copy and print it:", UVM_LOW)
+      `uvm_info("my_model", "get one transaction, copy and print it:", UVM_LOW);
       new_tr.print();
       ap.write(new_tr);
    end

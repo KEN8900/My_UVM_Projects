@@ -13,7 +13,7 @@ class case1_sequence extends uvm_sequence #(my_transaction);
       end
 
       repeat (10) begin
-         `uvm_do_with(m_trans, { m_trans.pload.size() == 60;})
+         `uvm_do_with(m_trans, {m_trans.pload.size() == 60;});
       end
 
       #100;
@@ -23,7 +23,7 @@ class case1_sequence extends uvm_sequence #(my_transaction);
       end
    endtask
 
-   `uvm_object_utils(case1_sequence)
+   `uvm_object_utils(case1_sequence);
 endclass
 
 class my_case1 extends base_test;
@@ -33,7 +33,7 @@ class my_case1 extends base_test;
    endfunction 
    
    extern virtual function void build_phase(uvm_phase phase); 
-   `uvm_component_utils(my_case1)
+   `uvm_component_utils(my_case1);
 endclass
 
 

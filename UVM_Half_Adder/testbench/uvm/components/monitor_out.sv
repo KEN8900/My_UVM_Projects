@@ -14,7 +14,7 @@ class monitor_out extends uvm_monitor;
     extern virtual task main_phase(uvm_phase phase);
     extern virtual task collect_one_pkt(transaction_out tr);
 
-    `uvm_component_utils(monitor_out)
+    `uvm_component_utils(monitor_out);
 endclass
 
 function monitor_out::new(string name = "monitor_out", uvm_component parent);
@@ -24,7 +24,7 @@ endfunction
 function void monitor_out::build_phase(uvm_phase phase);
     super.build_phase(phase);
     if(!uvm_config_db#(virtual interface_out)::get(this, "", "vif", vif)) begin
-        `uvm_fatal("monitor_out", "virtual interface_out must be set for vif!!!")
+        `uvm_fatal("monitor_out", "virtual interface_out must be set for vif!!!");
     end
     
     ap = new("ap", this);
@@ -33,7 +33,7 @@ endfunction
 task monitor_out::main_phase(uvm_phase phase);
     transaction_out tr;
     while(1) begin
-       tr = new("tr");
+       tr = new("tr_out_from_DUT");
        collect_one_pkt(tr);
        ap.write(tr);
     end

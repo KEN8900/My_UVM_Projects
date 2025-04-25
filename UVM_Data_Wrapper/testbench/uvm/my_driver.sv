@@ -4,7 +4,7 @@ class my_driver extends uvm_driver#(my_transaction);
 
    virtual my_if vif;
 
-   `uvm_component_utils(my_driver)
+   `uvm_component_utils(my_driver);
    function new(string name = "my_driver", uvm_component parent = null);
       super.new(name, parent);
    endfunction
@@ -12,7 +12,7 @@ class my_driver extends uvm_driver#(my_transaction);
    virtual function void build_phase(uvm_phase phase);
       super.build_phase(phase);
       if(!uvm_config_db#(virtual my_if)::get(this, "", "vif", vif)) begin
-         `uvm_fatal("my_driver", "virtual interface must be set for vif!!!")
+         `uvm_fatal("my_driver", "virtual interface must be set for vif!!!");
       end
    endfunction
 

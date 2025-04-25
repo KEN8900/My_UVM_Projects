@@ -4,8 +4,8 @@
 `include "base_sequence.sv"
 
 class random_data_1delay_sequence extends uvm_sequence;
-    `uvm_object_utils(random_data_1delay_sequence)
-    `uvm_declare_p_sequencer(virtual_sequencer)
+    `uvm_object_utils(random_data_1delay_sequence);
+    `uvm_declare_p_sequencer(virtual_sequencer);
 
     function new(string name = "random_data_1delay_sequence");
         super.new(name);
@@ -19,11 +19,11 @@ class random_data_1delay_sequence extends uvm_sequence;
         end
         
         // ndelay = 1 by soft constraint in base_sequence
-        `uvm_do_on_with(dut_seq, p_sequencer.p_dut_sqr, {ntrans == 10;}) 
+        `uvm_do_on_with(dut_seq, p_sequencer.p_dut_sqr, {ntrans == 10;}); 
 
         #800;
 
-        `uvm_do_on_with(dut_seq, p_sequencer.p_dut_sqr, {ntrans == 10;})
+        `uvm_do_on_with(dut_seq, p_sequencer.p_dut_sqr, {ntrans == 10;});
 
         #5000;
         
@@ -35,7 +35,7 @@ endclass
 
 
 class random_data_1delay_case extends base_test;
-    `uvm_component_utils(random_data_1delay_case)
+    `uvm_component_utils(random_data_1delay_case);
 
     function new(string name = "random_data_1delay_case", uvm_component parent);
         super.new(name, parent);

@@ -12,7 +12,7 @@ class agent_out extends uvm_agent;
     extern virtual function void build_phase(uvm_phase phase);
     extern virtual function void connect_phase(uvm_phase phase);
 
-    `uvm_component_utils(agent_out) 
+    `uvm_component_utils(agent_out); 
 endclass 
  
 function agent_out::new(string name = "agent_out", uvm_component parent);

@@ -10,7 +10,7 @@ class ref_model extends uvm_component;
     extern virtual function void build_phase(uvm_phase phase);
     extern virtual task main_phase(uvm_phase phase);
  
-    `uvm_component_utils(ref_model)
+    `uvm_component_utils(ref_model);
 endclass 
  
 function ref_model::new(string name = "ref_model", uvm_component parent);
@@ -29,9 +29,9 @@ task ref_model::main_phase(uvm_phase phase);
     super.main_phase(phase);
     while(1) begin
         port.get(tr);
-        new_tr = new("new_tr");
+        new_tr = new("tr_from_ref_model");
         new_tr.data = tr.data0 + tr.data1;
-        `uvm_info("ref_model", "get one transaction, copy and print it:", UVM_LOW)
+        `uvm_info("ref_model", "get one transaction, do the addition and print it:", UVM_LOW);
         new_tr.print();
         ap.write(new_tr);
     end

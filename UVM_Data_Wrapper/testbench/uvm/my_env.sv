@@ -32,7 +32,7 @@ class my_env extends uvm_env;
 
    extern virtual function void connect_phase(uvm_phase phase);
    
-   `uvm_component_utils(my_env)
+   `uvm_component_utils(my_env);
 endclass
 
 function void my_env::connect_phase(uvm_phase phase);

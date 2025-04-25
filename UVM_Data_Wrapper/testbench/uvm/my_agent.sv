@@ -15,7 +15,7 @@ class my_agent extends uvm_agent ;
    extern virtual function void build_phase(uvm_phase phase);
    extern virtual function void connect_phase(uvm_phase phase);
 
-   `uvm_component_utils(my_agent)
+   `uvm_component_utils(my_agent);
 endclass 
 
 

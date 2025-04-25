@@ -4,7 +4,7 @@ class my_scoreboard extends uvm_scoreboard;
    my_transaction  expect_queue[$];
    uvm_blocking_get_port #(my_transaction)  exp_port;
    uvm_blocking_get_port #(my_transaction)  act_port;
-   `uvm_component_utils(my_scoreboard)
+   `uvm_component_utils(my_scoreboard);
 
    extern function new(string name, uvm_component parent = null);
    extern virtual function void build_phase(uvm_phase phase);

@@ -1,5 +1,5 @@
-`ifndef environmentIRONMENT__SV
-`define environmentIRONMENT__SV
+`ifndef ENVIRONMENT__SV
+`define ENVIRONMENT__SV
 
 `include "agent_in.sv"
 `include "agent_out.sv"
@@ -20,7 +20,7 @@ class environment extends uvm_env;
     extern virtual function void build_phase(uvm_phase phase);  
     extern virtual function void connect_phase(uvm_phase phase);
     
-    `uvm_component_utils(environment)
+    `uvm_component_utils(environment);
 endclass
 
 function environment::new(string name = "environment", uvm_component parent);

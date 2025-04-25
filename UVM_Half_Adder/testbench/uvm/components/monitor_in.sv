@@ -14,7 +14,7 @@ class monitor_in extends uvm_monitor;
     extern virtual task main_phase(uvm_phase phase);
     extern virtual task collect_one_pkt(transaction_in tr);
 
-    `uvm_component_utils(monitor_in)
+    `uvm_component_utils(monitor_in);
 endclass
 
 function monitor_in::new(string name = "monitor_in", uvm_component parent);
@@ -24,7 +24,7 @@ endfunction
 function void monitor_in::build_phase(uvm_phase phase);
     super.build_phase(phase);
     if(!uvm_config_db#(virtual interface_in)::get(this, "", "vif", vif)) begin
-        `uvm_fatal("monitor_in", "virtual interface_in must be set for vif!!!")
+        `uvm_fatal("monitor_in", "virtual interface_in must be set for vif!!!");
     end
     
     ap = new("ap", this);
@@ -33,7 +33,7 @@ endfunction
 task monitor_in::main_phase(uvm_phase phase);
     transaction_in tr;
     while(1) begin
-       tr = new("tr");
+       tr = new("tr_in_from_driver_in");
        collect_one_pkt(tr);
        ap.write(tr);
     end

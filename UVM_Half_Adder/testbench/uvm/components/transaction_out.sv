@@ -5,7 +5,7 @@ class transaction_out extends uvm_sequence_item;
     rand bit[9:0] data;
 
     `uvm_object_utils_begin(transaction_out)
-        `uvm_field_int(data, UVM_ALL_ON)
+        `uvm_field_int(data, UVM_ALL_ON);
     `uvm_object_utils_end
 
     extern function new(string name);

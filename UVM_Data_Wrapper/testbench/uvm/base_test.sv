@@ -11,7 +11,8 @@ class base_test extends uvm_test;
    
    extern virtual function void build_phase(uvm_phase phase);
    extern virtual function void report_phase(uvm_phase phase);
-   `uvm_component_utils(base_test)
+
+   `uvm_component_utils(base_test);
 endclass
 
 

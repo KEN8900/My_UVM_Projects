@@ -13,7 +13,7 @@ class case0_sequence extends uvm_sequence #(my_transaction);
       end
 
       repeat (10) begin
-         `uvm_do(m_trans)
+         `uvm_do(m_trans);
       end
 
       #100;
@@ -23,7 +23,7 @@ class case0_sequence extends uvm_sequence #(my_transaction);
       end
    endtask
 
-   `uvm_object_utils(case0_sequence)
+   `uvm_object_utils(case0_sequence);
 endclass
 
 
@@ -33,7 +33,7 @@ class my_case0 extends base_test;
       super.new(name,parent);
    endfunction 
    extern virtual function void build_phase(uvm_phase phase); 
-   `uvm_component_utils(my_case0)
+   `uvm_component_utils(my_case0);
 endclass
 
 

@@ -4,8 +4,8 @@
 `include "base_sequence.sv"
 
 class random_data_burst_sequence extends uvm_sequence;
-    `uvm_object_utils(random_data_burst_sequence)
-    `uvm_declare_p_sequencer(virtual_sequencer)
+    `uvm_object_utils(random_data_burst_sequence);
+    `uvm_declare_p_sequencer(virtual_sequencer);
 
     function new(string name = "random_data_burst_sequence");
         super.new(name);
@@ -18,11 +18,11 @@ class random_data_burst_sequence extends uvm_sequence;
             starting_phase.raise_objection(this);
         end
         
-        `uvm_do_on_with(dut_seq, p_sequencer.p_dut_sqr, {ntrans == 10; ndelay == 0; })
+        `uvm_do_on_with(dut_seq, p_sequencer.p_dut_sqr, {ntrans == 10; ndelay == 0; });
 
         #800;
 
-        `uvm_do_on_with(dut_seq, p_sequencer.p_dut_sqr, {ntrans == 10; ndelay == 0; })
+        `uvm_do_on_with(dut_seq, p_sequencer.p_dut_sqr, {ntrans == 10; ndelay == 0; });
 
         #5000;
         
@@ -34,7 +34,7 @@ endclass
 
 
 class random_data_burst_case extends base_test;
-    `uvm_component_utils(random_data_burst_case)
+    `uvm_component_utils(random_data_burst_case);
     
     function new(string name = "random_data_burst_case", uvm_component parent);
         super.new(name, parent);

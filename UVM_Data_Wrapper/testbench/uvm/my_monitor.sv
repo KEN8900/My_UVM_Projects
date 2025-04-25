@@ -6,7 +6,7 @@ class my_monitor extends uvm_monitor;
 
    uvm_analysis_port #(my_transaction)  ap;
    
-   `uvm_component_utils(my_monitor)
+   `uvm_component_utils(my_monitor);
    function new(string name = "my_monitor", uvm_component parent = null);
       super.new(name, parent);
    endfunction
@@ -14,7 +14,7 @@ class my_monitor extends uvm_monitor;
    virtual function void build_phase(uvm_phase phase);
       super.build_phase(phase);
       if(!uvm_config_db#(virtual my_if)::get(this, "", "vif", vif)) begin
-         `uvm_fatal("my_monitor", "virtual interface must be set for vif!!!")
+         `uvm_fatal("my_monitor", "virtual interface must be set for vif!!!");
       end
       
       ap = new("ap", this);

@@ -8,7 +8,7 @@ class virtual_sequencer extends uvm_sequencer;
 
 	extern function new(string name, uvm_component parent);
 
-	`uvm_component_utils(virtual_sequencer)
+	`uvm_component_utils(virtual_sequencer);
 endclass
 
 function virtual_sequencer::new(string name = "virtual_sequencer", uvm_component parent);

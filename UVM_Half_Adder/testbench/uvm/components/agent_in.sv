@@ -16,7 +16,7 @@ class agent_in extends uvm_agent;
     extern virtual function void build_phase(uvm_phase phase);
     extern virtual function void connect_phase(uvm_phase phase);
  
-    `uvm_component_utils(agent_in)
+    `uvm_component_utils(agent_in);
 endclass 
  
 function agent_in::new(string name = "agent_in", uvm_component parent);

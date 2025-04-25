@@ -13,8 +13,8 @@ class transaction_in extends uvm_sequence_item;
     }
 
     `uvm_object_utils_begin(transaction_in)
-        `uvm_field_int(data0, UVM_ALL_ON)
-        `uvm_field_int(data1, UVM_ALL_ON)
+        `uvm_field_int(data0, UVM_ALL_ON);
+        `uvm_field_int(data1, UVM_ALL_ON);
     `uvm_object_utils_end
 
     extern function new(string name);

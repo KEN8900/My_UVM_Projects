@@ -7,7 +7,7 @@ class my_sequencer extends uvm_sequencer #(my_transaction);
       super.new(name, parent);
    endfunction 
    
-   `uvm_component_utils(my_sequencer)
+   `uvm_component_utils(my_sequencer);
 endclass
 
 `endif

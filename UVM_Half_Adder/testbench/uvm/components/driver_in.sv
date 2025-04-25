@@ -12,7 +12,7 @@ class driver_in extends uvm_driver#(transaction_in);
     extern virtual task main_phase(uvm_phase phase);
     extern virtual task drive_one_pkt(transaction_in tr);
 
-    `uvm_component_utils(driver_in)
+    `uvm_component_utils(driver_in);
 endclass
 
 function driver_in::new(string name = "driver_in", uvm_component parent);
@@ -22,7 +22,7 @@ endfunction
 function void driver_in::build_phase(uvm_phase phase);
     super.build_phase(phase);
     if(!uvm_config_db#(virtual interface_in)::get(this, "", "vif", vif)) begin
-        `uvm_fatal("driver_in", "virtual interface_in must be set for vif!!!")
+        `uvm_fatal("driver_in", "virtual interface_in must be set for vif!!!");
     end
 endfunction
 

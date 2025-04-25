@@ -13,7 +13,7 @@ class base_test extends uvm_test;
     extern virtual function void connect_phase(uvm_phase phase);
     extern virtual function void report_phase(uvm_phase phase);
 
-    `uvm_component_utils(base_test)
+    `uvm_component_utils(base_test);
 endclass
 
 function base_test::new(string name = "base_test", uvm_component parent);
@@ -29,7 +29,7 @@ endfunction
 function void base_test::connect_phase(uvm_phase phase);
     super.connect_phase(phase);
     v_sqr.p_dut_sqr = env.agt_in.sqr;
-    // if(get_report_verbosity_level() >= UVM_HIGH ) begin 
+    // if (get_report_verbosity_level() >= UVM_HIGH) begin 
     //     uvm_top.print_topology();
     // end
 endfunction
@@ -38,8 +38,11 @@ function void base_test::report_phase(uvm_phase phase);
     uvm_report_server server;
     integer fid;
     int err_num;
-    string testname;
-    $value$plusargs("TESTNAME=%s", testname);
+    string testname = get_type_name();
+
+    //$value$plusargs("TESTNAME=%s", testname);
+    // if using $value$plusargs, need to add "+TESTNAME= <test_name>" in the Makefile
+    
     super.report_phase(phase);
 
     server = get_report_server();
@@ -66,5 +69,3 @@ endfunction
 
 `endif 
 
-
- 
